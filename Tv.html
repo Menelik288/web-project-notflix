@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tv-Shows -NOTFLIX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Logos/favicon1">
+</head>
+<body>
+    <!-- MOBILE HAMBURGER BUTTON -->
+<button id="hamburger" class="hamburger">☰</button>
+
+<!-- MOBILE SEARCH -->
+<div class="mobile-search">
+    <input type="text" id="mobile-search-input" placeholder="Search...">
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="Tv.html">TV Shows</a>
+    <a href="Films.html">Movies</a>
+    <a href="Popular.html">Popular</a>
+    <a href="MyList.html">My List</a>
+</div>
+        <header class="nav1">
+        <img src="Logos/image.png" alt="logo" class="logo">
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="Tv.html">TV </a>
+            <a href="Films.html">Movies</a>
+            <a href="Popular.html">Popular</a>
+            <a href="MyList.html">Mylist</a>
+        </nav>
+<div class="navright">
+        <div class="nav-search">
+        <input type="text" id="nav-search-input" placeholder="Search Movie....">
+        </div>
+        <img src="Logos/images.png" alt="">
+</div>
+    </header>
+    
+<section class="rows">
+    <div class="movie-row">
+        <h2 class="row-title">Top Rated TV</h2>
+        <div class="row-cards" id="tv-toprated"></div>
+    </div>
+
+    <div class="movie-row">
+        <h2 class="row-title">Trending TV This Week</h2>
+        <div class="row-cards" id="tv-trending"></div>
+    </div>
+
+    <div class="movie-row">
+        <h2 class="row-title">Action & Adventure</h2>
+        <div class="row-cards" id="tv-action"></div>
+    </div>
+
+    <div class="movie-row">
+        <h2 class="row-title">Comedy</h2>
+        <div class="row-cards" id="tv-comedy"></div>
+    </div>
+
+    <div class="movie-row">
+        <h2 class="row-title">Crime</h2>
+        <div class="row-cards" id="tv-crime"></div>
+    </div>
+
+    <div class="movie-row">
+        <h2 class="row-title">Animation</h2>
+        <div class="row-cards" id="tv-animation"></div>
+    </div>
+
+    <div class="movie-row">
+        <h2 class="row-title">Drama</h2>
+        <div class="row-cards" id="tv-drama"></div>
+    </div>
+
+    <div class="movie-row">
+        <h2 class="row-title">Popular TV Shows</h2>
+        <div class="row-cards" id="tv-popular"></div>
+    </div>
+</section>
+    
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById("hamburger");
+    const menu = document.getElementById("mobile-menu");
+
+    burger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+});
+</script>
+<script src="Tv.js"></script>
+</html>

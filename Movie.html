@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch now - NOTFLIX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Logos/favicon1">
+
+</head>
+<body>
+    <section id="movie-details" class="movie-details">
+
+        <div class="details-bg" id="details-bg"></div>
+
+        <div class="details-content">
+
+            <img id="details-poster" alt="Movie Poster" class="details-poster">
+
+            <div class="details-text">
+                <h1 id="details-title">Loading...</h1>
+
+                <p id="details-overview">Please wait...</p><br>
+                <p id="genre" >Genre: </p>
+
+                <p class="details-rating">
+                    ⭐ Rating
+                    <span id="details-rating">N/A</span>
+                </p>
+
+                <p class="details-release">
+                    📅 Release Date
+                    <span id="details-date">N/A</span>
+                </p>
+
+    <div id="tv-controls" class="hidden">
+        <label>Season:</label>
+        <select id="season-select"> </select>
+
+        <label>Episode:</label>
+        <select id="episode-select"></select>
+    </div>
+                <button class="btn btn-play" id="watch-btn">▶ Watch Now</button>
+                <button class="btn btn-trailer" id="trailer-btn">🎬 Trailer</button>
+                <button class="btn btn-list" id="list-btn">+ My List</button>
+    </div>
+
+    </section>
+   <div class="video-preview hidden" id="video-preview">
+    <iframe 
+        id="preview-frame"
+        frameborder="1"
+        allow="autoplay; fullscreen"
+    ></iframe>
+</div>
+    <script src="movie.js"></script>
+</body>
+
+</html>

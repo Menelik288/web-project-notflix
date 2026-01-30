@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - NOTFLIX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Logos/favicon1">
+</head>
+<body>
+    <!-- MOBILE HAMBURGER BUTTON -->
+<button id="hamburger" class="hamburger">☰</button>
+
+<!-- MOBILE SEARCH -->
+<div class="mobile-search">
+    <input type="text" id="mobile-search-input" placeholder="Search...">
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="Tv.html">TV Shows</a>
+    <a href="Films.html">Movies</a>
+    <a href="Popular.html">Popular</a>
+    <a href="MyList.html">My List</a>
+</div>
+    <header class="nav1">
+        <img src="Logos/image.png" alt="logo" class="logo">
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="Tv.html">TV</a>
+            <a href="Films.html">Movies</a>
+            <a href="Popular.html">Popular</a>
+            <a href="MyList.html">My List</a>
+        </nav>
+<div class="navright">
+        <div class="nav-search">
+        <input type="text" id="nav-search-input" placeholder="Search Movie....">
+        </div>
+        <img src="Logos/images.png" alt="">
+</div>
+    </header>
+    <section class="rows">
+        <div class="movie-row">
+            <h2 class="row-title">Trending Now</h2>
+            <div class="row-cards" id="trending-row"></div>
+        </div>
+        <div class="movie-row">
+            <h2 class="row-title">Top Rated</h2>
+            <div class="row-cards" id="toprated-row"></div>
+        </div>
+        <div class="movie-row">
+            <h2 class="row-title">Action Movies</h2>
+            <div class="row-cards" id="action-row"></div>
+        </div>
+        <div class="movie-row">
+            <h2 class="row-title">Comedy Movies</h2>
+            <div class="row-cards" id="comedy-row"></div>
+        </div>
+        <div class="movie-row">
+            <h2 class="row-title">Horror Movies</h2>
+            <div class="row-cards" id="horror-row"></div>
+        </div>
+        <div class="movie-row">
+            <h2 class="row-title">Romance Movies</h2>
+            <div class="row-cards" id="romance-row"></div>
+        </div>
+        <div class="movie-row">
+            <h2 class="row-title">Sci-Fi</h2>
+            <div class="row-cards" id="sifi-row"></div>
+        </div>
+    </section>
+    
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById("hamburger");
+    const menu = document.getElementById("mobile-menu");
+
+    burger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+});
+</script>
+    <script src="Films.js"></script>
+</body>
+</html>
